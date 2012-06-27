@@ -184,7 +184,7 @@ static void *finishedContext = @"finishedContext";
                                                requestURL:url];
     [_requests addObject:_request];
     [_request addObserver:self forKeyPath:requestFinishedKeyPath options:0 context:finishedContext];
-    [_request connect];
+    //[_request connect];
     return _request;
 }
 
